@@ -1,8 +1,8 @@
 export default {
-  reportTitleFormat: (number) => `Blown with the Wind #${number}`,
+  reportTitleFormat: (number) => `Raven Report Title #${number}`,
   ship: 'ISD-II Challenge',
-  squadron: 'Tempest',
-  squadronId: '45',
+  squadron: 'Raven',
+  squadronId: '159',
   squadronPatch: {
     url: 'https://tc.emperorshammer.org/patch.php?id=45&size=medium',
     height: 128,
@@ -14,8 +14,8 @@ export default {
     width: 1534,
   },
   cmdr: {
-    intro: 'From the Desk of Honsou Kessen',
-    name: 'Honsou Kessen',
+    intro: 'From the Desk of ??? ???',
+    name: '??? ???',
     title: 'LC Honsou',
     pin: 55973,
     email: 'mason.051283@gmail.com',
@@ -31,16 +31,16 @@ export default {
     pin: 12630,
   },
   flights: [{
-    name: 'Storm Knights',
-    motto: 'With this lance I judge, for he that dies pays all debts',
+    name: 'Choosers of The Slain',
+    motto: '???',
     ship: 5,
   }, {
-    name: 'Heralds of Maelstrom',
-    motto: 'The brightest thunderbolt is elicited from the darkest storm',
+    name: 'Omens of Death',
+    motto: '???',
     ship: 32,
   }, {
-    name: 'Paladins of Fulmination',
-    motto: 'You\'ll see the lightning but will be dead before the thunder',
+    name: 'Harbingers of Woe',
+    motto: '???',
     ship: 32,
   }],
 };

@@ -56,6 +56,7 @@ const orders = [{
   title: 'Koph Supremacy Project',
 }];
 
+// TODO update Comps
 const competitions = [{
   id: '3294',
   name: 'Imperial Storm III',
@@ -144,7 +145,7 @@ const competitions = [{
   units: 'Entire TC',
 }];
 
-// TODO confirm
+// TODO add Raven
 const ACTIVITY = {
   // Honsou
   55973: {
