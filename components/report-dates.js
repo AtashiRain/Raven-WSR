@@ -13,12 +13,17 @@ export default function Dates({
 }) {
   return (
     <Card>
+
+     {/*
+
+        TODO Add Raven Banner when made
       <img
         src={config.squadronPatch.url}
         style={{ float: 'right' }}
         alt="Tempest Squadron logo, featuring a horse rearing in front of a lightning bolt."
         width="135"
       />
+    */}
 
       <p styles={styles.p}>
         <strong>From:</strong>

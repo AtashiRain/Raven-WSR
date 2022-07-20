@@ -14,11 +14,11 @@ export default {
     width: 1534,
   },
   cmdr: {
-    intro: 'From the Desk of ??? ???',
-    name: '??? ???',
-    title: 'LC Honsou',
-    pin: 55973,
-    email: 'mason.051283@gmail.com',
+    intro: 'From the Desk of Stryker (with a little help from Atashi)',
+    name: 'Stryker',
+    title: 'GN Stryker',
+    pin: 12292,
+    email: 'ehstryker@gmail.com',
   },
   wc: {
     name: 'Denys Elara',
@@ -32,15 +32,15 @@ export default {
   },
   flights: [{
     name: 'Choosers of The Slain',
-    motto: '???',
-    ship: 5,
+    motto: '',
+    ship: 47,
   }, {
     name: 'Omens of Death',
-    motto: '???',
-    ship: 32,
+    motto: '',
+    ship: 47,
   }, {
     name: 'Harbingers of Woe',
-    motto: '???',
-    ship: 32,
+    motto: '',
+    ship: 47,
   }],
 };

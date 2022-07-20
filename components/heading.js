@@ -23,11 +23,15 @@ export default function Heading({ reportNumber }) {
           {config.reportTitleFormat(reportNumber)}
         </h2>
 
-        <img
+        {/*
+
+        TODO Add Raven Banner when made
+
+          <img
           alt="Tempest Banner"
           style={{ width: '100%' }}
           src={config.squadronBanner.url}
-        />
+        >*/}
       </center>
     </Card>
   );

@@ -6,21 +6,21 @@ import ReportDates from '../../components/report-dates';
 import Intro from '../../components/intro';
 import Activity from '../../components/activity';
 import Competitions from '../../components/competitions';
-import Citations from '../../components/citations';
-import Orders from '../../components/orders';
+// import Citations from '../../components/citations';
+// import Orders from '../../components/orders';
 import Closing from '../../components/closing';
 import Footer from '../../components/footer';
-import Link from '../../components/link';
+// import Link from '../../components/link';
 
 import config from '../../config';
 import loadActivityData from '../../src/loadSquadronActivityData';
 
 const reportNumber = 1;
-const startDate = '2021-07-01';
-const endDate = '2021-07-12';
-const submissionDate = '2021-07-13';
+const startDate = '2022-07-01';
+const endDate = '2022-07-19';
+const submissionDate = '2021-07-20';
 
-const citations = [
+/* const citations = [
   'TIE-TC 12',
   'TIE-TC 76',
   'TIE-TC 168',
@@ -54,7 +54,7 @@ const orders = [{
   name: 'TIE-TC 153',
   id: 390,
   title: 'Koph Supremacy Project',
-}];
+}]; */
 
 // TODO update Comps
 const competitions = [{
@@ -147,100 +147,100 @@ const competitions = [{
 
 // TODO add Raven
 const ACTIVITY = {
-  // Honsou
-  55973: {
-    communication: 'Email, Discord',
-    flightActivity: 'Star Conflict PvE; Squadrons PvP; TCiB battles completed',
-    otherActivity: 'Tempest Squadron Admin',
-    notes: '',
-  },
-
-  // Akreseus
-  56005: {
-    communication: 'Discord',
-    flightActivity: 'Squadrons PvP',
-    otherActivity: '',
-    notes: 'Another handful of LoCs for LT Akreseus. Start thinking about taking TCCORE for your LCM promotion!',
-  },
-
-  // Neko
-  55783: {
-    communication: 'COM check-ins',
-    flightActivity: 'XWA missions for TCiB; Star Conflict PvE for ISIII',
+  // Stryker
+  12292: {
+    communication: '',
+    flightActivity: '',
     otherActivity: '',
     notes: '',
   },
 
-  // Iam
-  55785: {
-    communication: 'COM check-ins',
-    flightActivity: 'XWA missions for TCiB; Star Conflict PvE for ISIII',
-    otherActivity: 'Created a LEGO Z95!',
-  },
-
-  // Richlet
-  4607: {
-    communication: 'Discord, Email',
-    flightActivity: 'Squadrons PvP/PvE',
+  // Astin
+  1348: {
+    communication: '',
+    flightActivity: '',
     otherActivity: '',
     notes: '',
   },
 
-  // EchoVII
-  55922: {
-    communication: 'Discord',
-    flightActivity: 'Squadrons PvP and Star Conflict PvE',
+  // Dathka
+  56363: {
+    communication: '',
+    flightActivity: '',
+    otherActivity: '',
+    notes: '',
+  },
+
+  // Von Barricello
+  56367: {
+    communication: '',
+    flightActivity: '',
+    otherActivity: '',
+  },
+
+  // Atashi
+  56229: {
+    communication: '',
+    flightActivity: '',
+    otherActivity: '',
+    notes: '',
+  },
+
+  // Vil Dance
+  56364: {
+    communication: '',
+    flightActivity: '',
     otherActivty: '',
     notes: '',
   },
 
-  // Dempsey
-  12945: {
-    communication: 'Discord',
-    flightActivity: 'SP Battles & Missions',
-    otherActivity: 'Earning a Gold Star of the Empire! Congratulations!',
-    notes: '',
-  },
-
-  // Kalve
-  1968: {
-    communication: 'Discord',
-    flightActivity: 'Star Conflict PvP/PvE; ImpStorm battle of Kammia (approx 110 Legions)',
-    otherActivity: 'Updated the Delta Squadron patch; Created 2 potential Eagle Squadron patches; Created Tempest Squadron banner; Participated in Sigma Sigil; Wrote fiction submission for "Real Heroes of the Challenge" competition',
-    notes: 'What a week of activity, great to see!',
-  },
-
-  // Phalk
-  6874: {
-    communication: 'Discord, Email',
-    flightActivity: 'TIE Free 137 for IS2.  XvT Free 10. XVTTC87. XVTTC90. Flew 1 assignment for TAC.',
-    otherActivity: 'Submitted reviews for flown battles. Participated in TC Trivia. Participated in Guess the Pilot by their Uniforms Competition.',
-    notes: '',
-  },
-
-  // Morgoth
-  55942: {
-    communication: 'Discord',
-    flightActivity: 'Squadrons PvP; Star Conflict PvE for ISIII',
+  // ThunderSpawn
+  56368: {
+    communication: '',
+    flightActivity: '',
     otherActivity: '',
     notes: '',
   },
 
-  // Coldsnacks
-  56017: {
-    communication: 'Discord',
-    flightActivity: 'Squadrons PvP/PvE; TCiB battles; Single Player Battles',
-    otherActivity: 'Updated uniform',
+  // Richlet
+  4607: {
+    communication: '',
+    flightActivity: '',
+    otherActivity: '',
     notes: '',
   },
 
-  // Gisornator
-  56116: {
-    communication: 'Discord',
-    flightActivity: 'Squadrons PvP',
-    otherActivity: 'Player Farming',
-    notes: 'Recently joined in our ranks, quickly advancing to full Lieutenant promotion.',
+  // To be filled
+  /*?????: {
+    communication: '',
+    flightActivity: '',
+    otherActivity: '',
+    notes: '',
   },
+
+  // To be filled
+  /*?????: {
+    communication: '',
+    flightActivity: '',
+    otherActivity: '',
+    notes: '',
+  },
+
+  // To be filled
+  /*?????: {
+    communication: '',
+    flightActivity: '',
+    otherActivity: '',
+    notes: '',
+  },
+
+  // To be filled
+  /*?????: {
+    communication: '',
+    flightActivity: '',
+    otherActivity: '',
+    notes: '',
+  },*/
 };
 
 function appendActivityData(activityData, additionalActivityData) {
@@ -273,26 +273,8 @@ export default function Report({ activityData }) {
       <Intro showUniform>
         <p>
           <em>
-          Tempestuous Times: A Honsou Story.
-          Sometimes in life we take a step back and think, how did I get here? Why am I here? What choices did I make?
-          Or were these choices simply an illusion of free will and the path was ordained for me by some higher power?
-          Staring out into the infinite black speckled with the distant twinkling lights of a billion suns, 
-          newly appointed CMDR Honsou pondered these very questions. His new office, a generous living and working space
-          separated by a half durasteel, half transparasteel dividing wall and remote shutters should he care for additional privacy.
-          It was a stark contrast to the quarters he had shared with Flight III. Still at least he didn't have to listen to Coldsnacks snoring anymore.
-          This had been the quarters of his CMDR Silwar, not two rotations ago. Silwar was now the COM of the ISD-II Challenge.
-          Honsou had been pegged for a move to the Hammer to rebuild Delta Squadron but there had been unforeseen delays.
-          He absently rubbed his left eye with his left index finger, the pain of the recent ocular injury still left ghosts of it’s discomfort.
-          Then there were rumours about Honsou becoming a CMDR aboard the Challenge, Honsou had not dreamed it would be Tempest. Yet here he was.
-          Honsou picked up his datapad and looked over the recent transmissions. VA Silwar and the others were doing a grand job of securing assets for the Challenge in Imperial Storm.
-          Honsou tossed the datapad back onto the desk and balled his fists. “Rho” he growled… All that mattered was that he got his shot at Rho Squadron.
-          Before his temper was able to flare completely, there was a chime at the intercom and his XO’s pleasant and soothing voice came through
-          “Sir, the new pilot from IWATS has arrived.” Her voice as chipper and excitable as always. “Excellent,” Honsou allowed himself a wry smile, “send him in.”
-          SL Gisornator stood to attention, until the doors closed, the XO heading back down the hallway beyond.
-          “My Friend” Honsou smiled, sincerely this time. “It is good to see you, are you ready?”
-          “Always!” Gisornator said, his attention stance switching to at ease, and he returned a knowing smile.
-          Honsou rounded his desk and sat down reaching for the bottle Silwar had left him and two glasses. “Take a seat, we have much to discuss.
-          These are tempestuous times and if you’re half as good as you used to be, they won’t know what hit them!”
+         
+          Atashi
 
           </em>
         </p>
@@ -314,28 +296,29 @@ export default function Report({ activityData }) {
 
       </Intro>
 
-      <Orders missions={orders}>
+      {/* <Orders missions={orders}>
         <p>
           These are some of the missions we're
           {' close to earning citations on. Check our status on the '}
           <Link href="https://tc.emperorshammer.org/battleboard.php?sqn=45">Squadron Battleboard</Link>.
         </p>
-      </Orders>
+      </Orders> */}
 
       <Activity activity={activity} />
 
       <Competitions competitions={competitions} />
 
-      <Citations
+      {/* <Citations
         citations={citations}
         citationsChange={citationsChange}
-      />
+      /> */}
 
       <Closing>
-        Well, I have been in command for 12 days at the point of writing this.
-        Tempest is still the best Squadron in the entire TC Fleet and
-        I haven't set the Challenge ablaze. I'd say we are off on the right foot!
-        Great work everybody. We are the storm!
+        This is my little play around with creating a monthly report for Raven. Just being a bit obnoxious, really. It probably
+        doesn't make sense for me to do this until <strike>I gain enough power to beat CMDR Stryker in a duel to the death and take his command</strike> CMDR Strkyer 
+        moves up the command chain, but here we are. For now, I'll just <em>shadow</em> him - get it?! I'm punny!<br/><br/>
+
+        (Cheery sign off!) Until our deamons are nevermore!
       </Closing>
 
       <Footer />
